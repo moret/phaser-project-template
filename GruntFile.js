@@ -25,14 +25,9 @@ module.exports = function (grunt) {
         watch: {
             files: 'src/**/*.js',
             tasks: ['concat']
-        },
-        open: {
-            dev: {
-                path: 'http://localhost:8080/index.html'
-            }
         }
     });
 
-    grunt.registerTask('default', ['concat', 'connect', 'open', 'watch']);
+    grunt.registerTask('default', ['concat', 'connect', 'watch']);
 
 }
